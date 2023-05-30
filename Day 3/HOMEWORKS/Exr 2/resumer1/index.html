@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <style>
+
+        .title {
+            height: 100px;
+            width: 300px;
+            background-color: black;
+            color: white;
+            position: relative;
+            margin-left: 10px;
+            font-size: 17px;
+        }
+
+        .text {
+            margin: 20px;
+            height: 10px;
+            position: absolute;
+            bottom: 10px;
+            padding: 5px 15px;
+        }
+
+        .title .tex {
+            height: 100px;
+
+        }
+
+        /* .title1 .title2{
+            text-align: center;
+        }*/
+        .title1 {
+            margin-left: 60px;
+            text-align: center;
+            color: #C0C0C0;
+            font-size: 80px;
+            height: 20px;
+        }
+
+        .title2 {
+            margin-left: 60px;
+            text-align: center;
+            color: #C0C0C0;
+            font-size: 40px;
+        }
+
+        .form-img {
+            padding-left: 25px;
+            padding-top: 25px;
+            height: 250px;
+            width: 250px;
+            bottom: 10px;
+        }
+/* 
+        .item-content-container {
+            height: auto;
+            width: 300px;
+
+        } */
+
+        .item-content1 {
+            flex: 1px;
+            display: flex;
+            background-color: black;
+            color: white;
+            height: fit-content;
+            width: 300px;
+        }
+
+        .align {
+            padding-left: 25px;
+
+        }
+
+        .container1 .contain1 .item-content-container,
+        .contain2 .item-content2 {
+            display: inline-block;
+            float: left;
+        }
+        .container1 .contain1 .item-content-container{
+            width: 300px;
+            height: auto;
+        }
+        .contain2 .item-content2 
+        {
+            
+            width: calc(100% - 310px);
+        }
+        .item-content2{
+            color: #C0C0C0;
+        }
+    </style>
+    <div class="container">
+        <header>
+            <div class="title">
+                <h1 class="text">RESUMER</p>
+            </div>
+            <div>
+                <h2 class="title1">ALAN WALKER</h2>
+                <p class="title2"><i>Graphic Designe</i></p>
+            </div>
+        </header>
+        <div class="container1">
+            <div class="contain1">
+                <div class="item-content1">
+                    <div class="item-content-container">
+                        <img class="form-img" src="photo.png" alt="">
+                        <div class="align">
+                            <h2>PROFILE</h2>
+                            <div>
+                                <h3>Name</h3>
+                                <p>Alan Walker</p>
+                                <h3>Day of Birth</h3>
+                                <p>10/05/1989</p>
+                                <h3>Phone</h3>
+                                <p>0193 483 4827</p>
+                                <h3>Email</h3>
+                                <p>alanwalker@gmail.com</p>
+                                <h3>Website</h3>
+                                <p>www.yourdomain.com</p>
+                                <h2>HOBBIES</h2>
+                                <ul style="list-style-type:circle;">
+                                    <li> <i> Dance</i></li>
+                                    <li> <i> Read Book</i></li>
+                                    <li> <i> Swimming</i></li>
+                                    </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contain2">
+                <h2 class="item-content2">JOB EXPERIENCES</h2>
+                <div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.price>ul {
+    list-style: none;
+}
+
+.flex,
+ul {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+
+}
+
+.container .category {
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid white;
+    justify-content: center;
+    width: calc(100% / 4);
+
+}
+
+h1 {
+    padding: 10px;
+    padding-left: 150px
+}
+
+.picture {
+    height: 200px;
+}

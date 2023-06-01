@@ -1,0 +1,24 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.flex, ul {
+    display: flex;
+}
+.plus {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.price>ul {
+    list-style: none;
+}
+
+.plus .title {
+    border-radius: 3px;
+    padding: 10px;
+    border: 1px solid red;
+    justify-content: center;
+    width: calc(100% / 3);
+}

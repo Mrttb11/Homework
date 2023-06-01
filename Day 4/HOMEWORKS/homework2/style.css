@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+.flex{
+    display: flex;
+}
+.news .content {
+    border-radius: 3px;
+    padding: 10px;
+    width: calc(100% / 4);
+    border: 1px solid white;
+    justify-content: center;
+}
+.view .picture {
+    height: 150px;
+    width: auto;
+    column-gap: 20px;
+    border-radius: 10px;
+}
+.h4{
+    text-align: center;
+}
+.color{
+    color: rgba(220, 64, 64, 0.835);
+}

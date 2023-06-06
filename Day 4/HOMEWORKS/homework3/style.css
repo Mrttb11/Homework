@@ -9,7 +9,7 @@
 }
 
 .flex,
-ul {
+ul, i {
     display: flex;
 }
 

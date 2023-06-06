@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        ul {
+            list-style: none;
+            margin: 0px;
+        }
+
+        .flex,
+        ul {
+            display: flex;
+        }
+
+        .rank>.star {
+            padding: 0px;
+            justify-content: center;
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <h4> Bình luận đánh giá bài viết</h4>
+    <div class="rank flex">
+        <div>Chọn đánh giá của bạn</div>
+        <div class="star">
+            <ul>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fe8c23;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fe8c23;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fe8c23;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fe8c23;"></i></li>
+                <li><i class="fa-solid fa-star fa-2xs" style="color: #fe8c23;"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="input_row">
+        <label for="evaluate"></label>
+        <textarea placeholder="Nhập đánh giá về dịch vụ, 80 kí tự" minlength="80" name="evaluate" id="evaluate"
+            cols="30" rows="5"></textarea>
+    </div>
+    <div class="information flex">
+        <div class="input_row">
+            <label for="last_name"></label>
+            <input min="4" placeholder="Tên (Bắt buộc)" id="last_name" type="text" name="last_name">
+        </div>
+        <div class="input_row">
+            <label for="email"></label>
+            <input min="4" placeholder="Email" required id="email" type="text" name="email">
+        </div>
+        <div class="input_row">
+            <label for="tel"></label>
+            <input min="4" placeholder="Số điện thoại (tùy chọn)" required id="tel" type="text" name="tel">
+        </div>
+    </div>
+    <div class="end flex">
+        <div class="input_row">
+            <label for="security_code"></label>
+            <input min="4" max="4" placeholder="Mã bảo vệ" required id="security_code" type="text" name="security_code">
+        </div>
+        <div class="input_row">
+            <button style="background-color: #fe8c23;" type="submit">Gửi đánh giá</button>
+        </div>
+    </div>
+</body>
+
+</html>

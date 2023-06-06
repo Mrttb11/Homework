@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table th,
+        table td {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        table thead th,
+        table tbody td:first-child {
+            background-color: aqua;
+        }
+
+        table tbody td  {
+            background-color: aquamarine;
+        }
+        table tbody td:focus-within .row1{
+            background-color: blanchedalmond;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <th colspan="2">Thời gian</th>
+            <th>Nội dung</th>
+            <th>Tài nguyên sử dụng</th>
+            <th>Thành phần tham gia</th>
+            <th>Địa điểm chung</th>
+            <th>Nội dung</th>
+        </thead>
+        <tbody>
+            <td rowspan="3">Thứ T2 06/07/2022</td>
+            <td>Sáng</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+        <tbody>
+            <td></td>
+            <td class="show">Chiều</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+        <tbody>
+            <td></td>
+            <td>Tối</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tbody>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    text-align: center;
+    background-color: #F7F7F7;
+}
+/* h1 {
+    text-align: center;
+    
+} */
+
+.bottom {
+    background-color: #FE6466;
+    height: 5px;
+    width: 50px;
+    margin: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: relative;
+}
+.title{
+    padding: 0px 100px;
+    color: #999;
+}
+.hinhpng {
+    background-position: 0 2px;
+    height: 50px;
+    width: 50px;
+}

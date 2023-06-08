@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //Bill tính tiền :
+
+        product = [
+            { Name :'Áo bull', Size : 'M', Number : 2, Price : 160.000, Bill : 'number * price'},
+            { Name :'Áo khoác gió NorthFace', Size : 'L', Number : 1, Price : 600.000, Bill : 'number * price'},
+            { Name :'Quần Jean Nam', Size : 30, Number : 1 , Price : 350.000, Bill : 'number * price'}
+            
+        ]
+        let myTablet = '<table>';
+            myTablet += `<tr><td>Name</td><td>Size</td><td>Number</td><td>Price</td><td>Bill</td></tr>`;
+        for (row in product) {
+            myTablet += `<tr><td>${product[row].Name}</td><td>${product[row].Size}</td><td>${product[row].Number}</td><td>${product[row].Price}</td><td>${product[row].Bill}</td></tr>`;
+        }
+        myTablet += '</table>';
+        document.write(myTablet);
+        console.log(myTablet);
+
+    </script>
+</body>
+</html>

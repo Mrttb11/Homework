@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+//Viết chương trình nhập vào số chữ điện dung trong một tháng của một hộ gia đình và tính số tiền hộ gia đình đó phải trả cho nhà máy điện theo qui định hiện nay của nghành điện như sau:
+//  - Nếu chữ điện từ 100 trở xuống thì số tiền phải trả là 550 đồng/chữ.
+//  - 50 chữ điện tiếp theo giá 900 đồng/chữ
+//  - 50 chữ tiếp theo giá 1210 đồng/ chữ
+//  - 100 chữ điện tiếp theo giá 1340 đồng/ chữ
+//  - Từ chữ thứ 301 trở đi gia 1400 đồng/ chữ
+
+        let myElectronic = prompt('Nhập số chữ điện dùng trong 1 tháng của bạn');
+           let price = 0
+        if(myElectronic <= 100) {
+            price = myElectronic * 550
+        }
+        else if (myElectronic <= 150) {
+            price = 100 * 550 + (myElectronic - 100) * 900
+        }
+        else if (myElectronic <= 200) {
+            price = 100 * 550 + 50 * 900 + (myElectronic - 150) * 1210
+        }
+        else if (myElectronic <= 300) {
+            price = 100 * 550 + 50 * 900 + 50 * 1210 (myElectronic - 200) * 1340
+        }
+        else if (myElectronic <= 301) {
+            price = 100 * 550 + 50 * 900 + 50 * 1210 + 100 * 1340 (myElectronic - 300) * 1400
+        }
+        alert('Số tiền hộ gia đình phải trả là: ' + price + 'đồng.');
+
+
+
+
+    </script>
+
+</body>
+
+</html>

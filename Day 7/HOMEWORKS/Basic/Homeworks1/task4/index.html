@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+//Bước 1: Định nghĩa một mảng gồm 5 hãng xe hơi mà bạn biết và in kết quả ra console
+       
+        let carArr = ['Toyota', 'Mec', 'Honda', 'Mazda', 'Ford'];
+        console.log(carArr);
+
+//Bước 2: Bạn hãy thay đổi tên hãng xe xếp thứ 2 trong mảng bạn vừa định nghĩa ở bước 1 và in kết quả ra console
+
+        carArr[2] = 'Suzuki';
+        console.log(carArr);
+       
+
+//Bước 3: Định nghĩa một mảng mới có chứa 5 hãng xe nói trên và bạn thêm vào cuối mảng mới này một hãng xe thứ 6 và in kết quả ra console
+        
+        let plusCarArr = [...carArr,'Nissan'];
+        console.log(plusCarArr);
+       
+    
+//Bước 4: Gộp 2 mảng ở bước 1 và bước 3 lại thành một mảng mới, và in kết quả ra console
+        
+        let jonCarArr = [...carArr,...plusCarArr];
+        console.log(jonCarArr);
+
+
+   </script>
+</body>
+
+</html>

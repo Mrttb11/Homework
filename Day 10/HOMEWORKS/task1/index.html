@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        #banner-home,
+        #product-home {
+            max-width: 1000px;
+            position: relative;
+        }
+
+        #banner-home .owl-nav {
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #product-home .owl-nav {
+            position: absolute;
+            width: 100%;
+            top: 40%;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #banner-home .owl-nav .owl-prev,
+        #banner-home .owl-nav .owl-next {
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+        #product-home .owl-nav .owl-prev,
+        #product-home .owl-nav .owl-next {
+            background-color: rgba(255, 255, 255, 0.5);
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+        }
+
+
+        h2 {
+            text-align: center;
+        }
+
+        .container #product-home {
+            width: 100%;
+            height: auto;
+            background-color: #F0F0F0;
+            display: flex;
+            column-gap: 10px;
+        }
+
+        .price .button {
+            border-radius: 5px solid white;
+        }
+
+        .price span {
+            text-decoration: line-through;
+        }
+
+        button {
+            color: #f3f3f3;
+            background-color: #FBA41B;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="color: red;">FLASH SALE</h2>
+    <div id="banner-home" class="owl-carousel owl-theme">
+        <div class="item">
+            <img src="https://icms-image.slatic.net/images/ims-web/bcacd404-8d78-4552-847f-e2c304498482.jpg" alt="">
+        </div>
+        <div class="item">
+            <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/be254506-82e6-4a25-9b2c-531040df18c6.jpg_1200x1200q90.jpg_.webp"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/00c7e0d9-0303-4226-a819-f093524d8c99.jpg_1200x1200q90.jpg_.webp"
+                alt="">
+        </div>
+        <div class="item">
+            <img src="https://lzd-img-global.slatic.net/g/icms/images/ims-web/79ee8434-0535-4c5d-81db-59df29590058.jpg_1200x1200q90.jpg_.webp"
+                alt="">
+        </div>
+    </div>
+    <h2 style="color: #333333;">SẢN PHẨM ĐANG BÁN CHẠY</h2>
+    <div class="container">
+        <div id="product-home" class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="https://ecshopvietnam.com/ecshopapple/cdn/images/202204/goods_img/iphone-se-2022-G4305-1649990733750.png"
+                    alt="">
+                <h3>iPhone SE 2022</h3>
+                <div class="price">
+                    <strong>29.690.000đ</strong>
+                    <span>20.990.000đ</span>
+                    <br>
+                    <button onclick="addCart()">Thêm vào giỏ hàng</button>
+                    <button onclick="clearAll()">ClearAll</button>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="https://ecshopvietnam.com/ecshopapple/cdn/images/202204/goods_img/phone-13-pro-max-256gb-G4311-1649990306426.png"
+                    alt="">
+                <h3>Phone 13 Pro Max 256gb</h3>
+                <div class="price">
+                    <strong>32.790.000đ</strong>
+                    <span>34.790.000₫</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://ecshopvietnam.com/ecshopapple/cdn/images/202204/goods_img/iphone-13-128gb-G4312-1649990074623.png"
+                    alt="">
+                <h3>iPhone 13 128GB</h3>
+                <div class="price">
+                    <strong>20.990.000đ</strong>
+                    <span>22.390.000đ</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://ecshopvietnam.com/ecshopapple/cdn/images/202204/goods_img/macbook-air-13-inch-m1-2020-7-core-gpu-G4314-1649991255186.png"
+                    alt="">
+                <h3>MacBook Air 13 inch M1 2020 7-Core GPU</h3>
+                <div class="price">
+                    <strong>310.000đ</strong>
+                    <span>420.000đ</span>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+            integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            const addCart = () => {
+                console.log('addCart');
+                let product = { id: 1, name: 'iPhone SE 2022', price: 29690000, quantity: 1 };
+
+                if (typeof Storage !== 'undefined') {
+                    let products = localStorage.getItem('products');
+                    console.log('<<=== products ===>>', products);
+                    if (!products) {
+                        let productsArr = [];
+
+                        productsArr.push(product);
+                        localStorage.setItem('products', JSON.stringify(productsArr));
+                    } else {
+                        let productsArr = JSON.parse(products);
+                        let file = true;
+                        for (let i = 0; i < productsArr.length; i++) {
+                            if (productsArr[i].id = product.id) {
+                                productsArr[i].quantity = productsArr[i].quantity + 1;
+                                localStorage.setItem('products', JSON.stringify(productsArr));
+                                file = false
+                                break;
+                            }
+                        }
+                    }
+                } else {
+                    console.log('Không hỗ trợ trên trình duyệt này');
+                }
+            }
+            function clearAll() {
+                localStorage.clear();
+            }
+
+
+
+
+
+
+
+
+                $('#banner-home').owlCarousel({
+                    loop: true,
+                    items: 1,
+                    nav: true,
+                })
+                $('#product-home').owlCarousel({
+                    item: 4,
+                    nav: true,
+                })
+        </script>
+
+
+</body>
+
+</html>

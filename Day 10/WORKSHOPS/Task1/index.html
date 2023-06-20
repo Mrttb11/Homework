@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button name="add" id="add" onclick="addItem()">Button Add</button>
+    <button name="delete" id="delete" onclick="deleteItem()">Button Delete</button>
+
+    <script>
+        function addItem() {
+            localStorage.setItem('name', 'Thinh');
+            localStorage.getItem('name');
+        }
+        function deleteItem() {
+            localStorage.removeItem('name');
+        }
+
+
+
+
+        // if (typeof Storage !== "undefined");
+        // console.log('Have Support'); {
+
+        //     // Thêm mới
+        //     // localStorage.setItem('name', 'Thinh');
+
+        //     sessionStorage.setItem('name', 'Thinh');
+        //     // sessionStorage.clear();
+
+        // }
+
+
+    </script>
+</body>
+
+</html>

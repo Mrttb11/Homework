@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Basic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        footer {
+            background-color: #F8F9FA;
+            padding: 20px 200px;
+            margin: 20px 0px;
+        }
+    </style>
+<body>
+    <div class="container">
+        <header>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="row">
+                <div class="col col-4">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A list item
+                            <span class="badge bg-primary rounded-pill">14</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A second list item
+                            <span class="badge bg-primary rounded-pill">2</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A third list item
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A third list item
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A third list item
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A third list item
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A third list item
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            A third list item
+                            <span class="badge bg-primary rounded-pill">1</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col col-8">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://img.tgdd.vn/imgt/f_webp,fit_outside,quality_100/https://cdn.tgdd.vn/2023/06/banner/S21FE-720-220-720x220-3.png"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://salt.tikicdn.com/cache/w1080/ts/tikimsp/89/ae/08/8802fb4bf7c9f36cd146207bb6d0b641.png.webp"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://salt.tikicdn.com/cache/w1080/ts/tikimsp/54/eb/4c/f9efee36be74c2e577695d8e354b1734.png.webp"
+                                    class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually -hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <h2>Promotion Products</h2>
+            <div class="row gy-4 row-cols-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x200.png?fbclid=IwAR1jZ12Ar2Cq1HyOUO25xnh9mtsEJWtXTO97lPh-btOZCUeDeH-jS4wDzdY"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-4"></span>
+                                <span class="placeholder col-6"></span>
+                                <span class="placeholder col-8"></span>
+                            </p>
+                            <a class="btn btn-primary disabled placeholder col-6"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row gy-4">
+                <div class="col-6">
+                    <img src="https://via.placeholder.com/595x100.png?fbclid=IwAR2hPs-Y3ZFt-lqPSgctWxvZk0LqZ_oPRHWJkYuGvGNCj6ttuv6xEYPZejU"
+                        class="rounded float-start" alt="...">
+                </div>
+                <div class="col-6">
+                    <img src="https://via.placeholder.com/595x100.png?fbclid=IwAR2hPs-Y3ZFt-lqPSgctWxvZk0LqZ_oPRHWJkYuGvGNCj6ttuv6xEYPZejU"
+                        class="rounded float-end" alt="...">
+                </div>
+            </div>
+
+            <h2>News</h2>
+            <div class="row gy-4 row-cols-2 row-cols-md-3 row-cols-lg-4">
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x120.png?fbclid=IwAR2hPs-Y3ZFt-lqPSgctWxvZk0LqZ_oPRHWJkYuGvGNCj6ttuv6xEYPZejU"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x120.png?fbclid=IwAR2hPs-Y3ZFt-lqPSgctWxvZk0LqZ_oPRHWJkYuGvGNCj6ttuv6xEYPZejU"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x120.png?fbclid=IwAR2hPs-Y3ZFt-lqPSgctWxvZk0LqZ_oPRHWJkYuGvGNCj6ttuv6xEYPZejU"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" aria-hidden="true">
+                        <img src="https://via.placeholder.com/200x120.png?fbclid=IwAR2hPs-Y3ZFt-lqPSgctWxvZk0LqZ_oPRHWJkYuGvGNCj6ttuv6xEYPZejU"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">
+                                <span class="placeholder col-6"></span>
+                            </h5>
+                            <p class="card-text placeholder-glow">
+                                <span class="placeholder col-7"></span>
+                                <span class="placeholder col-4"></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </main>
+</div>
+
+    <footer>
+        <div class="row">
+            <div class="col-3">             
+                        <h3 class="card-title">Short Intro</h3>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam suscipit
+                            tenetur earum molestiae. Odio dicta qui saepe, nemo impedit fuga labore perspiciatis,
+                            adipisci nulla culpa, voluptas maiores?</p>            
+            </div>
+            <div class="col-3">  
+                        <h3 class="card-title">Subtitle</h3>
+                        <ul>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                        </ul>        
+            </div>
+            <div class="col-3">           
+                        <h3 class="card-title">Subtitle</h3>
+                        <ul>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                        </ul>
+            </div>
+            <div class="col-3">           
+                        <h3 class="card-title">Subtitle</h3>
+                        <ul>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                            <li><a class="text-primary">Lorem ipsum dolor, sit amet consectetur </a></li>
+                        </ul>                  
+            </div>
+    </footer>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</body>
+
+</html>

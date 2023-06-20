@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <form>
+        <label for="quantity">Số lượng:</label>
+        <input type="number" id="quantity" name="quantity" value="1">
+        <br>
+        <label for="price">Giá:</label>
+        <input type="number" id="price" name="price" value="0">
+        <br>
+        <label for="total">Thành tiền:</label>
+        <span id="total"></span>
+        <br>
+        <button onclick="increaseFuntion()" id="increase">Tăng số lượng</button>
+        <button onclick="descreaseFuntion()" id="decrease">Giảm số lượng</button>
+        <button id="total">Thành tiền</button>
+    </form>
+    <script>
+        let increaseFuntion = document.getElementById('quantity').value++;
+        let descreaseFuntion = document.getElementById('quantity').value--;
+        document.getElementById("total").innerHTML = getQuantity * getPrice;
+    </script> -->
+
+
+    <!DOCTYPE html>
+    <html>
+
+    <head>
+        <title>Form tính tiền</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        form {
+            display:table-caption;
+        }
+        form label {
+            min-width: 150px;
+        }
+    </style>
+    <body>
+        <form>
+            <label for="quantity">Số lượng</label>
+            <input type="number" id="quantity" name="quantity" value="1">
+            <label for="price">Giá tiền</label>
+            <input type="number" id="price" name="price" value="0">
+            <label for="total">Thành tiền:</label>
+            <input type="number" id="total" name="total" value="0">
+            <button type="button" onclick="increase()">Tăng</button>
+            <button type="button" onclick="decrease()">Giảm</button>
+        </form>
+
+        <script>
+            function calculate() {
+                let quantity = parseInt(document.getElementById("quantity").value);
+                let price = parseFloat(document.getElementById("price").value);
+                let total = quantity * price;
+                document.getElementById("total").value = total.toFixed(2);
+            }
+            function increase() {
+                let quantity = parseInt(document.getElementById("quantity").value);
+                document.getElementById("quantity").value = quantity + 1;
+                calculate();
+            }
+            function decrease() {
+                let quantity = parseInt(document.getElementById("quantity").value);
+                document.getElementById("quantity").value = quantity - 1;
+                calculate();
+
+            }
+        </script>
+    </body>
+
+    </html>
+</body>
+
+</html>
+
+</body>
+
+</html>

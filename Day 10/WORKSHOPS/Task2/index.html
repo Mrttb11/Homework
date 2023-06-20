@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button id="add" onclick="addItem1()">Thêm vào giỏ hàng 1</button>
+    <button id="add" onclick="addItem2()">Thêm vào giỏ hàng 2</button>
+    <div id="result"></div>
+    <script>
+        const getData = () => {
+            //Đầu tiên vẫn phải kiểm tra có tồn tại trên trình duyệt ko :
+            if (typeof Storage !== 'undefined') {
+                let products = localStorage.getItem('products')
+                //Nếu có thì sẽ convert nó sang array :
+                if(products){
+                    return JSON.parse(products);
+                }
+            }
+        }
+        
+        const products = getData(); 
+        console.log('<<=== products ===>>',products);
+        let html = `<ul>`;
+            for (let index = 0; index < products.length; index++) {
+               html += `<li>${products[index].name} ${products[index].price}${products[index].quantity} </li>`
+            }
+            html += `</ul>`;
+            document.querySelector("#results").innerHTML = html;
+
+        
+
+        const addItem1 = () => {
+            console.log('addItem');
+            let product = { id: 1, name: 'iPhone 4', price: 200, quantity: 1 };
+
+            if (typeof Storage !== 'undefined') {
+                // Nếu hỗ trợ thì sẽ thêm cái sản phẩm xuống local :
+                // Sẽ kiểm tra product đã tồn tại hay chưa bằng cách getItem ra xem thử:
+                let products = localStorage.getItem('products')
+                console.log('<<=== products ===>>', products);
+
+                //TH1 : Chưa tồn tại thì if (phủ định):
+                if (!products) {
+                    let productArr = [];            // Thêm sản phẩm vào mảng
+                    productArr.push(product);       // Ghi xuống localStorage
+                    localStorage.setItem('products', JSON.stringify(productArr));
+                } else {
+                    let productArr = JSON.parse(products);
+                    productArr.push(product);
+                    localStorage.setItem('products', JSON.stringify(productArr));
+                }
+
+            } else {
+                console.log('Browser does not support '); //Không hỗ trợ trình duyệt
+            }
+        }
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+:root {
+    --main-color: #f80;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    outline: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+body {
+    color: #111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flex {
+    /* flex-direction: row; Mac dinh cua flex  */
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+/* header */
+
+header {
+    background-color: var(--main-color);
+}
+
+.header-middle {
+    padding: 10px 0px;
+}
+
+.header-nav ul {
+    column-gap: 15px;
+}
+
+/* main */
+main {
+    margin: 20px 0px;
+}
+.product-list .item {
+    background-color: #f3f3f37d;
+    width: calc((100% - 30px) / 4);
+    height: 200px;
+    text-align: center;
+}
+/* footer */
+footer {
+    padding: 40px 0 20px 0;
+    background-color: #212121;
+    color: #f7f7f7;
+}
+.footer-wrapper .footer-col{
+    width: 25%;
+}
+
+main .main-content {
+    width: 80%;
+}
+
+main aside {
+    width: calc(100% - 80% - 20px);
+    background-color:aqua;
+}

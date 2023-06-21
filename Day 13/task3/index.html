@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul id="list">
+        <li class="child_one">Child 1</li>
+        <li class="child_two">
+            <img src="images/photo.png" alt="photo" />
+        </li>
+        <li class="child_three"><a href="link3">Child 3</a></li>
+    </ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        //Thêm cho thẻ ul một class mới tên list :
+        $('#list').addClass('list');
+
+        //Lấy nội dung: Child 1 từ thẻ li đầu tiên, hiển thị nội dung lấy được ra console :
+        let childOne = $('.child_one').text();
+        console.log('<<=== 🚀 childOne ===>>',childOne);
+
+        //Lấy nội dung: thuộc tính src và alt từ thẻ img, hiển thị ra console :
+        let childTowSlc = $('img').attr('src');
+        console.log('<<=== 🚀 childTowSlc ===>>',childTowSlc);
+
+        let childTowAlt = $('img').attr('alt');
+       console.log('<<=== 🚀 childTowAlt ===>>',childTowAlt);
+
+        //Thay đổi: thuộc tính src và alt từ thẻ img bằng một giá trị mới :
+        $('img').attr('src', 'https://salt.tikicdn.com/cache/w1080/ts/tikimsp/d9/15/5b/2bec60b785099e55b07a1dd423031513.png.webp')
+        $('img').attr('alt', 'anhtiki')
+
+        //Lấy tên class của thẻ li thứ 3, hiển thị ra console :
+        let nameThree = $('ul>li:nth-child(3)').attr('class');
+        console.log('<<=== 🚀 nameThree ===>>',nameThree);
+        
+
+
+
+    </script>
+
+
+</body>
+</html>

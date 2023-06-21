@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <input placeholder="username" type="text" name="username" value="" />
+    <!-- <input placeholder="password" type="text" name="password" value="" /> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        // Thêm thuộc tính id
+        $('input').attr('id', 'username');
+
+        // Thêm thuộc tính value
+        $('input').val('123123');
+
+        // In ra console
+        console.log($('input').attr('id'));
+        console.log($('input').val());
+
+    </script>
+</body>
+
+</html>

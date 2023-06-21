@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <label for="a">Nhập giá trị a</label>
+        <input type="number" id="a" name="a" placeholder="Nhập giá trị a"> <br>
+        <label for="a">Nhập giá trị b</label>
+        <input type="number" id="b" name="b" placeholder="Nhập giá trị b"> <br>
+        <label for="op">Operation:</label>
+        <select name="op" id="op">
+            <option value="add">Add</option>
+            <option value="subtract">Subtract</option>
+            <option value="multiply ">Multiply</option>
+            <option value="divide ">Divide</option>
+            <option value="modulus">Modulus</option>
+        </select>
+        <button id="calculate" type="button">Calculate</button> <br>
+        <label for="result">Result:</label>
+        <input type="text" id="result">
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        $('#calculate').on("click", function () {
+            let a = parseFloat($('#a').val());
+            let b = parseFloat($('#b').val());
+            let result;
+            switch ($('op').val()) {
+                case "add":
+                    result = a + b;
+                    break;
+                case "subtract":
+                    result = a - b;
+                    break;
+                case "subtract":
+                    result = a * b;
+                    break;
+                case "subtract":
+                    result = a / b;
+                    break;
+                default:
+                    result = "";
+            }
+            console.log('<<=== result ===>>', result);
+            $('#result').html(result);
+
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

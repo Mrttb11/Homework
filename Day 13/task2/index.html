@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --main-color: rgb(196, 200, 222);
+        }
+
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            outline: 0px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #111;
+        }
+
+        ul,
+        ol {
+            list-style: none;
+        }
+
+        body {
+            color: #111;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            line-height: 1.4;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .flex {
+            /* flex-direction: row; Mac dinh cua flex  */
+            display: flex;
+        }
+
+        .flex-column {
+            flex-direction: column;
+        }
+
+        .justify-center {
+            justify-content: center;
+        }
+
+        .justify-between {
+            justify-content: space-between;
+        }
+
+        /* header */
+
+        header {
+            background-color: var(--main-color);
+        }
+
+        .header-middle {
+            padding: 10px 0px;
+        }
+
+        .header-nav ul {
+            column-gap: 15px;
+        }
+
+        @media screen and (max-width : 426px) {
+            .header-nav ul {
+                display: none;
+            }
+
+            #toggle-mobile {
+                display: block;
+            }
+
+            #toggle-mobile span,
+            #toggle-mobile span:before,
+            #toggle-mobile span:after {
+                background-color: #fff;
+                display: inline-block;
+                height: 2px;
+                width: 50px;
+            }
+
+            #toggle-mobile span {
+                position: relative;
+            }
+
+            #toggle-mobile span:before,
+            #toggle-mobile span:after {
+                position: absolute;
+                content: "";
+                left: 0px;
+            }
+
+            #toggle-mobile span:before {
+                top: -7px
+            }
+
+            #toggle-mobile span:after {
+                bottom: -7px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-middle justify-between">
+                <nav id="header-nav" class="header-nav">
+                    <ul class="flex">
+                        <li><a href="">HOME</a></li>
+                        <li><a href="">ABOUT</a></li>
+                        <li><a href="">BLOG</a></li>
+                        <li><a href="">CONTACT</a></li>
+                    </ul>
+                    <div id="toggle-mobile">
+                        <span></span>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+
+        // $("#toggle-mobile").on('click', function () {
+        //     console.log('Oke');
+        //     $('#header-nav').toggleClass('active');
+        // });
+
+
+        // $("#toggle-mobile").on('click', function () {
+        //     $('#header-nav ul').show(3000);
+        //     $(this).hide();
+        // })
+            // $("#toggle-mobile").on('click', function () {
+            //     $('#header-nav ul').fadeIn(5000);
+            //     $(this).hide();
+            // })
+
+            $("#toggle-mobile").on('click', function () {
+                $('#header-nav').slideDown(200);
+                $(this).hide();
+            });
+
+
+    </script>
+</body>
+
+</html>

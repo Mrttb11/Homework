@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input placeholder="username" type="text" name="username" value="" />
+    <input placeholder="password" type="text" name="password" value="" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+        //Bước 1: Add cho 2 input nói trên 2 giá trị tương ứng vào thuộc tính value :
+        $('input[name="username"]').val('123');
+        $('input[name="password"]').val('456');
+
+        //Bước 2: Add cho 2 input nói trên 2 thuộc tính id
+        $('input[name="username"]').attr("id","username");
+        $('input[name="password"]').attr("id","password");
+
+        //Bước 3: Lấy 2 giá trị vừa add ở bước 1 dựa vào id đã thêm ở bước 2, rồi show kết quả ra console
+        let addUserName = $('#username').val();
+        let addPassWord = $('#password').val();
+        console.log('<<=== 🚀 addUserName ===>>',addUserName);
+        console.log('<<=== 🚀 addPassWord ===>>',addPassWord);
+
+    </script>
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
